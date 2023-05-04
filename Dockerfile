@@ -14,14 +14,14 @@ RUN npm install
 COPY . .
 
 # Set environment variables for Stripe keys
-ENV PORT=8088
+ENV PORT=8087
 ENV STATIC_DIR="./client"
 ENV PUBLISHABLE_KEY="pk_test_51N0g8sSBFxvYxNZ3YQGHWZF8b8R4akXhmyVXYLpEh9ybBfV2CSgabAIkyaYtEs3XlyDhS5VWX6ZQKubacviQ8M8Z0027OWi8Rr"
 ENV SECRET_KEY="sk_test_51N0g8sSBFxvYxNZ3qqSgFzN2KpvToazskHszWBZaeb9b1WTXO81uYN0gNONg9OB56GiO6fY3yS9uKjvaSeT6j7yV007ttxJ4sa"
 
 
 # Expose the port that the Node.js application will listen on
-EXPOSE 8088
+EXPOSE 8087
 
 # Start the Node.js application
 CMD ["node", "server.js"]
